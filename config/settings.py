@@ -7,7 +7,7 @@ SECRET_KEY = 'django-insecure-fs^#di_9^@ko2e=e3+clu+_eg8-f2xlki=)mq0#bq1)p$*beta
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -16,6 +16,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'catalog',
 ]
 
 MIDDLEWARE = [
@@ -78,6 +80,11 @@ USE_I18N = True
 
 USE_TZ = True
 
+
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS = (
+    BASE_DIR / 'static',
+)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
