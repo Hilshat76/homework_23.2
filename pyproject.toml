@@ -1,14 +1,17 @@
 [tool.poetry]
-name = "homework-19-2"
+name = "homework-20-1"
 version = "0.1.0"
 description = ""
 authors = ["Hilshat76"]
 readme = "README.md"
-packages = [{include = "homework_19"}]
+packages = [{include = "homework_20"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
 django = "^5.1"
+psycopg2-binary = "^2.9.9"
+pillow = "^10.4.0"
+black = "^24.8.0"
 
 
 [build-system]
