@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "homework-20-1"
+name = "homework-20-2"
 version = "0.1.0"
 description = ""
 authors = ["Hilshat76"]
@@ -11,8 +11,10 @@ python = "^3.12"
 django = "^5.1"
 psycopg2-binary = "^2.9.9"
 pillow = "^10.4.0"
-black = "^24.8.0"
 ipython = "^8.27.0"
+black = "^24.8.0"
+python-dotenv = "^1.0.1"
+redis = "^5.1.1"
 
 
 [build-system]

@@ -12,7 +12,7 @@ def add_to_json_file(name: str, phone: str, message: str):
     # Определяем путь к директории data
     data_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
 
-    # Указываем путь к файлу vacancy.json
+    # Указываем путь к файлу data.json
     file_path = os.path.join(data_directory, file_name)
 
     # Проверяем, существует ли файл

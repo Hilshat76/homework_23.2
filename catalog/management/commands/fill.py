@@ -10,11 +10,11 @@ class Command(BaseCommand):
     @staticmethod
     def json_read_categories():
         # Здесь мы получаем данные из фикстурв с категориями
-        with open('catalog/data/catalog_data.json', 'r', encoding='utf-8') as file:
+        with open('article/data/catalog_data.json', 'r', encoding='utf-8') as file:
             file = json.load(file)
             categories = []
             for category in file:
-                if category['model'] == 'catalog.category':
+                if category['model'] == 'article.category':
                     category['fields']['pk'] = category['pk']
                     categories.append(category['fields'])
             return categories
@@ -22,11 +22,11 @@ class Command(BaseCommand):
     @staticmethod
     def json_read_products():
         # Здесь мы получаем данные из фикстурв с продуктами
-        with open('catalog/data/catalog_data.json', 'r', encoding='utf-8') as file:
+        with open('article/data/catalog_data.json', 'r', encoding='utf-8') as file:
             file = json.load(file)
             products = []
             for product in file:
-                if product['model'] == 'catalog.product':
+                if product['model'] == 'article.product':
                     product['fields']['pk'] = product['pk']
                     products.append(product['fields'])
             return products
