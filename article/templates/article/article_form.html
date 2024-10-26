@@ -1,0 +1,40 @@
+{% extends 'catalog/home.html' %}
+{% load article_tags %}
+{% block content %}
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <form class="row" method="post" enctype="multipart/form-data">
+                    <div class="card">
+                        <div class="card-body">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                        </div>
+
+                        <div class="mt-3 mb-3">
+                            <div class="col-lg-11">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="submit" class="btn btn-primary">
+                                        {% if object %}
+                                        Сохранить
+                                        {% else %}
+                                        Создать
+                                        {% endif %}
+                                    </button>
+
+                                    <a class="btn btn-primary" href="{% url 'article:articles_list' %}"
+                                       role="button">Отменить</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

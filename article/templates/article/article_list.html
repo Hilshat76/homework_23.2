@@ -1,0 +1,50 @@
+{% extends 'catalog/home.html' %}
+{% load article_tags %}
+{% block content %}
+
+<main>
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Обзор статей</h2>
+
+        {% if perms.article.change_article %}
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a class="btn btn-outline-primary" href="{% url 'article:articles_create' %}">Создать статью</a>
+        </div>
+        {% endif %}
+
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                    {% for article in object_list %}
+                    {% if article.sign_of_publication %}
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="{{ article.preview | media_filter }}" class="card-img-top"
+                                 style="height: 200px; width: auto; object-fit: contain;">
+                            <div class="card-body">
+                                <p ALIGN="justify"><strong>{{ article.title }}</strong></p>
+
+                                <div style="text-align: right;">
+                                    <p><strong>{{ article.number_of_views }} &#x1F441 </strong></p>
+                                </div>
+
+                                <div class="button-box">
+                                    <a class="btn btn-primary"
+                                       href="{% url 'article:articles_detail' article.pk %}"
+                                       role="button">Посмотреть</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

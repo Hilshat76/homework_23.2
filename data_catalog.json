@@ -1,0 +1,294 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Телевизор",
+      "description": "Большой выбор моделей"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Смартфон",
+      "description": "Широкий ассортимент"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Ноутбуки",
+      "description": "Ноутбуки с шроким рядом ценовой категории"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "Компьютеры",
+      "description": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 20,
+    "fields": {
+      "name": "Смартфон Huawei Pura 70 12/256Gb, ADY-LX9, черный",
+      "description": "Смартфон Huawei Pura 70 имеет всё необходимое для комфортного использования. Он оснащён мощным процессором 2024 года, качественным контрастным экраном и функциональной тройной камерой.",
+      "photo": "catalog/products_photo/Рисунок1.jpg",
+      "category": 2,
+      "price": 45490,
+      "created_at": "2024-09-10",
+      "updated_at": "2024-09-20"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 21,
+    "fields": {
+      "name": "Смартфон Samsung Galaxy A55 5G 8/256Gb, SM-A556E, темно-синий",
+      "description": "Смартфон Samsung Galaxy A55 5G представлен в 2024 году и имеет современное оснащение. Экран поддерживает высокую герцовку, производительный процессор справится с тяжёлыми приложениями, камера может запечатлеть мельчайшие детали, а предустановленная ОС Android 14 открывает доступ к новейшим функциям.",
+      "photo": "catalog/products_photo/Рисунок2_Uyi6ow4.jpg",
+      "category": 2,
+      "price": 43990,
+      "created_at": "2024-09-10",
+      "updated_at": "2024-09-19"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 22,
+    "fields": {
+      "name": "43\" Телевизор Samsung UE43DU7100UXRU, Crystal UHD, 4K Ultra HD, черный, СМАРТ ТВ, Tizen OS",
+      "description": "Телевизор Samsung UE43DU7100UXRU – модель средних размеров, которая подойдет для установки в небольшой комнате и просмотра фильмов в высоком разрешении.",
+      "photo": "catalog/products_photo/Рисунок4.jpg",
+      "category": 1,
+      "price": 40990,
+      "created_at": "2024-09-10",
+      "updated_at": "2024-10-04"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 23,
+    "fields": {
+      "name": "43\" Телевизор Xiaomi MI TV A 43 FHD 2025, FULL HD, черный, СМАРТ ТВ, Android",
+      "description": "Телевизор Xiaomi MI TV A 43 получил широкоформатную LED-панель с Full HD-разрешением, что обеспечивает четкую и детализированную картинку с реалистичной цветопередачей при воспроизведении мультимедийного контента. Модель по умолчанию укомплектована всеми необходимыми тюнерами для приема сигнала кабельного/спутникового телевидения. Встроенный медиаплеер поддерживает разные форматы медиафайлов и умеет считывать информацию с USB-флешки.",
+      "photo": "catalog/products_photo/Рисунок5.jpg",
+      "category": 1,
+      "price": 22990,
+      "created_at": "2024-09-10",
+      "updated_at": "2024-10-05"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 24,
+    "fields": {
+      "name": "Ноутбук Huawei MateBook 14 FlemingH 53014APJ, 14\", 2024,",
+      "description": "Ноутбук Huawei MateBook 14 FlemingH 53014APJ, 14\", 2024, OLED, Intel Core Ultra 5 125H 1.2ГГц, 14-ядерный, 16ГБ 512ГБ SSD, Intel Arc, Windows 11 Home, серый",
+      "photo": "catalog/products_photo/Рисунок6.jpg",
+      "category": 3,
+      "price": 99990,
+      "created_at": "2024-09-10",
+      "updated_at": "2024-09-10"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 25,
+    "fields": {
+      "name": "Ноутбук Acer Aspire 3 A315-44P-R1VD NX.KSJCD.009, 15.6\"",
+      "description": "Ноутбук Acer Aspire 3 A315-44P-R1VD NX.KSJCD.009, 15.6\", IPS, AMD Ryzen 7 5700U 1.8ГГц, 8-ядерный, 16ГБ DDR4, 512ГБ SSD, AMD Radeon, без операционной системы, серебристый",
+      "photo": "catalog/products_photo/Рисунок7.jpg",
+      "category": 3,
+      "price": 48990,
+      "created_at": "2024-09-10",
+      "updated_at": "2024-09-10"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 26,
+    "fields": {
+      "name": "Компьютер iRU Home 310H6SE",
+      "description": "Компьютер iRU Home 310H6SE, Intel Core i5 12400, DDR4 16ГБ, 512ГБ(SSD), Intel UHD Graphics 730, Free DOS, черный [2028636]",
+      "photo": "catalog/products_photo/Рисунок8.jpg",
+      "category": 4,
+      "price": 38790,
+      "created_at": "2024-09-10",
+      "updated_at": "2024-09-10"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 27,
+    "fields": {
+      "name": "Компьютер iRU Office 310H6SM",
+      "description": "Компьютер iRU Office 310H6SM, Intel Core i5 12400, DDR4 16ГБ, 512ГБ(SSD), Intel UHD Graphics 730, Free DOS, черный [2025255]",
+      "photo": "catalog/products_photo/Рисунок9.jpg",
+      "category": 4,
+      "price": 40420,
+      "created_at": "2024-09-10",
+      "updated_at": "2024-09-19"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 29,
+    "fields": {
+      "name": "24\" Моноблок Apple iMac A2874 4.5K",
+      "description": "24\" Моноблок Apple iMac A2874 4.5K, Apple M3 8 core, 8ГБ 256ГБ SSD, macOS зеленый [mqra3zp/a]",
+      "photo": "catalog/products_photo/Рисунок10.jpg",
+      "category": 4,
+      "price": 169990,
+      "created_at": "2024-09-11",
+      "updated_at": "2024-09-11"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 33,
+    "fields": {
+      "name": "27\" Моноблок ASUS F3702WFA-BPE0090 Full HD",
+      "description": "27\" Моноблок ASUS F3702WFA-BPE0090 Full HD, AMD Ryzen 3 7320U, 8ГБ LPDDR5, 512ГБ SSD, noOS черный [90pt03m2-m00d60]",
+      "photo": "catalog/products_photo/Рисунок11.jpg",
+      "category": 4,
+      "price": 74990,
+      "created_at": "2024-09-19",
+      "updated_at": "2024-09-19"
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 1,
+    "fields": {
+      "product": 22,
+      "version_number": 1,
+      "version_name": "версия 001",
+      "is_active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 2,
+    "fields": {
+      "product": 22,
+      "version_number": 2,
+      "version_name": "версия 002",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 3,
+    "fields": {
+      "product": 23,
+      "version_number": 1,
+      "version_name": "версия 001",
+      "is_active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 4,
+    "fields": {
+      "product": 23,
+      "version_number": 2,
+      "version_name": "версия 002",
+      "is_active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 7,
+    "fields": {
+      "product": 20,
+      "version_number": 1,
+      "version_name": "версия 001",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 8,
+    "fields": {
+      "product": 21,
+      "version_number": 1,
+      "version_name": "версия 001",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 9,
+    "fields": {
+      "product": 25,
+      "version_number": 1,
+      "version_name": "версия 001",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 10,
+    "fields": {
+      "product": 24,
+      "version_number": 1,
+      "version_name": "версия 001",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 11,
+    "fields": {
+      "product": 29,
+      "version_number": 1,
+      "version_name": "версия 001",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 12,
+    "fields": {
+      "product": 33,
+      "version_number": 1,
+      "version_name": "версия 001",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 13,
+    "fields": {
+      "product": 26,
+      "version_number": 1,
+      "version_name": "версия 001",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 14,
+    "fields": {
+      "product": 27,
+      "version_number": 1,
+      "version_name": "версия 001",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 17,
+    "fields": {
+      "product": 22,
+      "version_number": 5,
+      "version_name": "версия 005",
+      "is_active": true
+    }
+  }
+]
